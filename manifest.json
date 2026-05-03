@@ -1,0 +1,205 @@
+{
+    "id" : "H519D9B1A",
+    "name" : "GSDC",
+    "description" : "",
+    "versionName" : "1.0.0",
+    "versionCode" : "100",
+    "transformPx" : false,
+    "type" : "app",
+    "app-plus" : {
+        "usingComponents" : true,
+        "nvueStyleCompiler" : "uni-compiler",
+        "compilerVersion" : 3,
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : true,
+            "waiting" : true,
+            "autoclose" : true,
+            "delay" : 0
+        },
+        "modules" : {
+            "Maps" : {
+                "description" : "高德地图"
+            },
+            "Geolocation" : {
+                "description" : "定位模块"
+            }
+        },
+        "distribute" : {
+            "android" : {
+                "packagename" : "com.suihua.watersupply",
+                "abiFilters" : [ "armeabi-v7a", "arm64-v8a" ],
+                "permissions" : [
+                    "<uses-permission android:name=\"android.permission.INTERNET\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_EXTERNAL_STORAGE\"/>",
+                    "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>"
+                ],
+                "minSdkVersion" : 21,
+                "targetSdkVersion" : 30
+            },
+            "ios" : {
+                "bundleid" : "com.suihua.watersupply",
+                "capabilities" : {
+                    "entitlements" : {
+                        "com.apple.developer.networking.wifi-info" : "true"
+                    }
+                }
+            },
+            "sdkConfigs" : {
+                "maps" : {
+                    "amap" : {
+                        "appkey_ios" : "f6cd3190f514e447d283a4ddc0fa8163",
+                        "appkey_android" : "3e11e1ddadf6aaaebf3cd65bea45750d"
+                    }
+                },
+                "geolocation" : {
+                    "amap" : {
+                        "__platform__" : [ "android", "ios" ]
+                    }
+                }
+            },
+            "icons" : {
+                "android" : {
+                    "hdpi" : "static/icons/72x72.png",
+                    "xhdpi" : "static/icons/96x96.png",
+                    "xxhdpi" : "static/icons/144x144.png",
+                    "xxxhdpi" : "static/icons/192x192.png"
+                },
+                "ios" : {
+                    "appstore" : "static/icons/1024x1024.png",
+                    "ipad" : {
+                        "app" : "static/icons/76x76.png",
+                        "app@2x" : "static/icons/152x152.png",
+                        "notification" : "static/icons/20x20.png",
+                        "notification@2x" : "static/icons/40x40.png",
+                        "proapp@2x" : "static/icons/167x167.png",
+                        "settings" : "static/icons/29x29.png",
+                        "settings@2x" : "static/icons/58x58.png",
+                        "spotlight" : "static/icons/40x40.png",
+                        "spotlight@2x" : "static/icons/80x80.png"
+                    },
+                    "iphone" : {
+                        "app@2x" : "static/icons/120x120.png",
+                        "app@3x" : "static/icons/180x180.png",
+                        "notification@2x" : "static/icons/40x40.png",
+                        "notification@3x" : "static/icons/60x60.png",
+                        "settings@2x" : "static/icons/58x58.png",
+                        "settings@3x" : "static/icons/87x87.png",
+                        "spotlight@2x" : "static/icons/80x80.png",
+                        "spotlight@3x" : "static/icons/120x120.png"
+                    }
+                }
+            },
+            "splashscreen" : {
+                "android" : {
+                    "hdpi" : "static/splash/480x762.png",
+                    "xhdpi" : "static/splash/720x1242.png",
+                    "xxhdpi" : "static/splash/1080x1882.png"
+                },
+                "ios" : {
+                    "iphone" : {
+                        "portrait-896h@3x" : "static/splash/1242x2688.png",
+                        "landscape-896h@3x" : "static/splash/2688x1242.png",
+                        "portrait-896h@2x" : "static/splash/828x1792.png",
+                        "landscape-896h@2x" : "static/splash/1792x828.png",
+                        "iphonex" : "static/splash/1125x2436.png",
+                        "iphonexl" : "static/splash/2436x1125.png",
+                        "portrait-736h@3x" : "static/splash/1242x2208.png",
+                        "landscape-736h@3x" : "static/splash/2208x1242.png",
+                        "portrait-667h@2x" : "static/splash/750x1334.png",
+                        "portrait@2x" : "static/splash/640x960.png",
+                        "portrait-568h@2x" : "static/splash/640x1136.png"
+                    },
+                    "ipad" : {
+                        "portrait" : "static/splash/768x1024.png",
+                        "portrait-retina" : "static/splash/1536x2048.png",
+                        "landscape" : "static/splash/1024x768.png",
+                        "landscape-retina" : "static/splash/2048x1536.png"
+                    }
+                }
+            }
+        }
+    },
+    "quickapp" : {},
+    "mp-weixin" : {
+        "appid" : "",
+        "setting" : {
+            "urlCheck" : false
+        },
+        "usingComponents" : true
+    },
+    "mp-alipay" : {
+        "usingComponents" : true
+    },
+    "mp-baidu" : {
+        "usingComponents" : true
+    },
+    "mp-toutiao" : {
+        "usingComponents" : true
+    },
+    "uniStatistics" : {
+        "enable" : false
+    },
+    "version" : {
+        "name" : "1.0.0",
+        "code" : 3
+    },
+    "launch_path" : "index.html",
+    "plus" : {
+        "distribute" : {
+            "ios" : {
+                "dSYMs" : false
+            },
+            "icons" : {
+                "android" : {
+                    "hdpi" : "unpackage/res/icons/72x72.png",
+                    "xhdpi" : "unpackage/res/icons/96x96.png",
+                    "xxhdpi" : "unpackage/res/icons/144x144.png",
+                    "xxxhdpi" : "unpackage/res/icons/192x192.png"
+                },
+                "ios" : {
+                    "appstore" : "unpackage/res/icons/1024x1024.png",
+                    "ipad" : {
+                        "app" : "unpackage/res/icons/76x76.png",
+                        "app@2x" : "unpackage/res/icons/152x152.png",
+                        "notification" : "unpackage/res/icons/20x20.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "proapp@2x" : "unpackage/res/icons/167x167.png",
+                        "settings" : "unpackage/res/icons/29x29.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "spotlight" : "unpackage/res/icons/40x40.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png"
+                    },
+                    "iphone" : {
+                        "app@2x" : "unpackage/res/icons/120x120.png",
+                        "app@3x" : "unpackage/res/icons/180x180.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "notification@3x" : "unpackage/res/icons/60x60.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "settings@3x" : "unpackage/res/icons/87x87.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png",
+                        "spotlight@3x" : "unpackage/res/icons/120x120.png"
+                    }
+                }
+            },
+            "plugins" : {
+                "maps" : {
+                    "amap" : {
+                        "name" : "amappz46z0Lk",
+                        "appkey_ios" : "1096e21970fdd07e9ff194b511bac2f8",
+                        "appkey_android" : "3e11e1ddadf6aaaebf3cd65bea45750d"
+                    }
+                }
+            }
+        }
+    },
+    "permissions" : {
+        "Maps" : {}
+    }
+}
